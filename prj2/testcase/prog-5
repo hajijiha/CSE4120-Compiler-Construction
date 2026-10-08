@@ -1,0 +1,10 @@
+int f(int x, int y) {
+  int *p;
+  int arr[3];
+
+  p = arr;
+  arr[0] = x;
+  arr[1] = y;
+
+  return *p + *(arr + 1);
+}
