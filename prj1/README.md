@@ -2,7 +2,7 @@
 
 `src/TypeCheck.fs`에서 심벌 테이블을 관리하고 표현식·문장의 타입을 검사합니다. int/bool과 포인터·NULL의 호환성, 선언과 대입, 블록 스코프를 처리합니다.
 
-## 구조와 출처
+## 구조
 
 `src/AST.fs`는 원본 언어의 AST, `Lexer.fsl`과 `Parser.fsy`는 제공된 전처리부,
 `Main.fs`는 실행 진입점입니다. IR 단계에는 제공된 `IR.fs`, `Executor.fs`와 지원 모듈이 포함됩니다.
@@ -26,5 +26,4 @@ python3 check.py
 
 - [과제 설명](docs/assignment.pdf)
 - [제출 보고서](docs/report.pdf)
-- 제출 보고서에는 구현 과정과 수업에서 요구한 도구 사용 내역이 포함돼 있습니다.
 - 빌드 및 테스트(2026-10-08): .NET SDK가 없어 미실행입니다. 재현에는 .NET 8 SDK가 필요합니다.
